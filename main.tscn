@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://nw2vd1rg7dn2"]
+
+[ext_resource type="Shader" path="res://main.gdshader" id="1_7xfgt"]
+[ext_resource type="Texture2D" uid="uid://c86baxjcl8jkq" path="res://1a83106e426f2e3d76506682786342de.1000x777x1.jpg" id="1_wip1j"]
+[ext_resource type="Script" path="res://Sprite2D.gd" id="3_myp36"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jr217"]
+shader = ExtResource("1_7xfgt")
+
+[node name="main" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_jr217")
+position = Vector2(592, 300)
+scale = Vector2(0.627413, 0.627413)
+texture = ExtResource("1_wip1j")
+script = ExtResource("3_myp36")
